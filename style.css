@@ -11,13 +11,26 @@ body{
     background-color: #000000;
     color: #F6F6F6;
 }
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__links{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__links__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+}
 
 .titulo-destaque{
     color: #22D4FD;
 }
 
 .apresentacao{
-    padding: 10% 15%;
+    padding: 7%  15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
