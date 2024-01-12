@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{
+    --cor-primaria: #0000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+    --cor-destaque: Purple;
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +18,8 @@
 body{
     /*height: 100vh;*/
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 .cabecalho{
     padding: 2% 0% 0% 15%;
@@ -19,15 +29,15 @@ body{
     gap: 80px;
 }
 .cabecalho__links__link{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .titulo-destaque{
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao{
@@ -45,12 +55,12 @@ body{
 
 .apresentacao__conteudo__titulo{
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-primaria);
 }
 
 .apresentacao__conteudo__texto{
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
 }
 .apresentacao__links{
     display: flex;
@@ -60,7 +70,7 @@ body{
     gap: 32px;
 }
 .apresentacao__links__subtitulo{
-    font-family: 'Krona One' , sans-serif;
+    font-family: var(--font-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -76,12 +86,12 @@ body{
     font-size: 24px;
     padding: 21.5px 0px;
     text-decoration: none;
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    font-family: var(--font-secundaria);
 }
 .apresentacao__conteudo__texto__competencia{
-    color: purple;
+    color: var(--cor-destaque);
 }
 .foto{
     border-radius: 10px;
@@ -89,21 +99,13 @@ body{
     height: 400px;
 }
 .apresentacao__links__link:hover{
-    background-color: #272727;
+    background-color: var(--cor-hover);
     padding: 4%;
 }
 .rodape{
-    background-color: #22D4FD;
-    color: #000000;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     padding: 24px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.curriculo{
-    padding: 7%  15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    font-family: var(--font-secundaria);
 }
