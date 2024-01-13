@@ -2,9 +2,9 @@
 
 :root{
     --cor-primaria: #000000;
-    --cor-secundaria: #F4DFC8;
-    --cor-terciaria: #F4EAE0;
-    --cor-hover: #FAF6F0;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #4E4FEB;
+    --cor-hover: #068FFF;
     --cor-destaque: Purple;
     --font-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
@@ -121,6 +121,10 @@ body{
     
     .apresentacao{
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
     }
 
 }
